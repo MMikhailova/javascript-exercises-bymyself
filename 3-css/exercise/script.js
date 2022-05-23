@@ -19,3 +19,17 @@ function colorKeyword() {
 
   /* SOLUTION */
 }
+
+function changeBoxColor(){
+  let coloredBox = document.querySelector('#coloredBox');
+  let color = coloredBox.style.backgroundColor;
+  //Write the rest of the code here
+  /* SOLUTION */
+  
+}
+
+function sliderChanged(value){
+  console.log("the value of the slider is "+value);
+ //Write the rest of the code here
+  /* SOLUTION */
+}

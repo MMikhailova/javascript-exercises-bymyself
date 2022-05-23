@@ -36,6 +36,20 @@
   </label>
   <button onclick="colorKeyword()">Check color keyword</button>
 </section>
+
+<section>
+  <h2>Change the color of the box from red to green to blue to red. The color should change to the next color everytime you click the button.</h2>
+  <div id="coloredBox" style="background-color:red;width: 100px;height: 100px"></div>
+    <button onclick="changeBoxColor()">Change box color</button>
+</section>
+  
+  
+<section>
+  <h2>Scale/increase the size of the yellow box by using the slider.</h2>
+    <input type="range" oninput="sliderChanged(this.value)" min="1" max="3" step="0.05" value="1"/>
+  <div id="sizedBox" style="width: 100px;height: 100px;background-color:yellow"></div>
+    
+</section>
 <!-- partial -->
   <script  src="./script.js"></script>
 

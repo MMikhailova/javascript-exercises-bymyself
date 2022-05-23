@@ -24,3 +24,34 @@ function colorKeyword () {
     document.body.style.backgroundColor = 'red';
   }
 }
+
+function changeBoxColor(){
+  /* SOLUTION (SHARED) */
+  let coloredBox = document.querySelector('#coloredBox');
+  let color = coloredBox.style.backgroundColor;
+  
+  /* SOLUTION SIMPLE */
+    if(color === "red") {
+    coloredBox.style.backgroundColor = "green";
+  } else if (color === "green"){
+    coloredBox.style.backgroundColor = "blue";
+  } else if(color === "blue"){
+    coloredBox.style.backgroundColor = "red";
+  }
+  
+  /* SOLUTION ADVANCED */
+  var colors = ["red","green", "blue"];
+  var colorIndex = colors.indexOf(color);
+  colorIndex++;
+  if(colorIndex > (colors.length - 1)) colorIndex = 0;
+  coloredBox.style.backgroundColor = colors[colorIndex];
+}
+
+function sliderChanged(value){
+  console.log("the value of the slider is "+value);
+  
+  /* SOLUTION */
+  var box = document.querySelector("#sizedBox");
+  box.style.width = (100 * value) + "px";
+  box.style.height = (100 * value) + "px";
+}

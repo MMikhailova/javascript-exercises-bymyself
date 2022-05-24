@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+
+    <title>cat advice</title>
+
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section>
+      i like cats: <input id="likes-cats" type="checkbox" /> <br />
+      i am allergic to cats: <input id="is-allergic" type="checkbox" /> <br />
+      i own a cat: <input id="owns-one" type="checkbox" /> <br />
+
+      <button id="give-advice">get advice</button>
+
+      <hr />
+
+      <text>your advice:</text>
+      <p id="message"></p>
+
+      <br />
+
+      <text>the "correct" advice:</text>
+      <p id="secret-solution-message"></p>
+    </section>
+
+    <script src="./src/1-cat-advice-empty.js" type="module"></script>
+    <script src="./src/3-cat-advice-scrambled-helper.js" type="module"></script>
+  </body>
+</html>

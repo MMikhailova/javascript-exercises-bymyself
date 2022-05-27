@@ -4,20 +4,33 @@
     <meta charset="UTF-8" />
     <title>WTJ - HYF</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- partial:index.partial.html -->
-    <h1>Your Exercise</h1>
-    <section>
-      <label
-        >Type something here:
-        <input type="text" id="jsTest" />
-      </label>
-      <br />
-      <button onclick="checkJavascript()">Run</button>
-    </section>
 
-    <!-- partial -->
+<form id="intro" style="display:block">
+<h2>Quiz "Parlez-vous français?"</h2>
+<p>Whether you took French in school or not you might be surprised how much French you actually know.</br>
+So take our quiz, and see if you have what it takes to pass basic French!</p>
+<h3> Bonne chance!</h3>
+<label>Your name
+  <input type="text" name="fname">
+  </label>
+</br>
+  <button type="button" onclick="checkJavascript()">Start quiz</button>
+</form>
+<form id="questions" style="display: none">
+  <h2>What is "le petit déjeuner"?</h2>
+  <input type="radio" id="breakfast" name="petdej" value="breakfast">
+  <label for="breakfast">Breakfast</label><br>
+  <input type="radio" id="lunch" name="petdej" value="lunch">
+  <label for="luch">Lunch</label><br>
+  <input type="radio" id="dinner" name="petdej" value="dinner">
+  <label for="dinner">Dinner</label>
+</form>
+
     <script src="./script.js"></script>
   </body>
 </html>

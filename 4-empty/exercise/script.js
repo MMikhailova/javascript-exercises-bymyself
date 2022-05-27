@@ -1,6 +1,4 @@
 function checkJavascript() {
-  const input = document.querySelector("#jsTest").value;
-
-  /* put your exercise here */
-  console.log(input);
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("questions").style.display = "block";
 }

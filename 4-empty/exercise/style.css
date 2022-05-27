@@ -1,3 +1,28 @@
-label {
-  display: block;
+body {
+  background-image: url('paris.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#intro, #questions{
+  left : 50%;
+    top: 40%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Caveat';
+  font-size: 20px;
+  background-color: rgb(250, 247, 247);
+  opacity: 95%;
+  width:fit-content;
+  height: fit-content;
+  padding: 30px;
+  color:rgb(31, 18, 18);
+  border: 2px solid rgb(201, 196, 196);
+  border-radius: 15px;
+
+  
+}
+button{
+margin: 15px 50px;
 }

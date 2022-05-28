@@ -16,19 +16,21 @@
 So take our quiz, and see if you have what it takes to pass basic French!</p>
 <h3> Bonne chance!</h3>
 <label>Your name
-  <input type="text" name="fname">
+  <input id='input' type="text" name="fname">
   </label>
 </br>
-  <button type="button" onclick="checkJavascript()">Start quiz</button>
+  <button type="button" onclick="checkName()">Start quiz</button>
 </form>
 <form id="questions" style="display: none">
+  <h1>Hi, </h1>
   <h2>What is "le petit déjeuner"?</h2>
-  <input type="radio" id="breakfast" name="petdej" value="breakfast">
+  <input type="radio" id="one" name="petdej" value="breakfast">
   <label for="breakfast">Breakfast</label><br>
-  <input type="radio" id="lunch" name="petdej" value="lunch">
+  <input type="radio" id="two" name="petdej" value="lunch">
   <label for="luch">Lunch</label><br>
-  <input type="radio" id="dinner" name="petdej" value="dinner">
+  <input type="radio" id="three" name="petdej" value="dinner">
   <label for="dinner">Dinner</label>
+  <button id="btn">Submit</button>
 </form>
 
     <script src="./script.js"></script>

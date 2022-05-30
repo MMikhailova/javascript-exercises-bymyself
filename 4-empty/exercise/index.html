@@ -10,7 +10,7 @@
   </head>
   <body>
 
-<form id="intro" style="display:block">
+<div id="intro" style="display:block">
 <h2>Quiz "Parlez-vous français?"</h2>
 <p>Whether you took French in school or not you might be surprised how much French you actually know.</br>
 So take our quiz, and see if you have what it takes to pass basic French!</p>
@@ -20,18 +20,21 @@ So take our quiz, and see if you have what it takes to pass basic French!</p>
   </label>
 </br>
   <button type="button" onclick="checkName()">Start quiz</button>
-</form>
-<form id="questions" style="display: none">
+</div>
+<div id="form" style="display: none">
   <h1>Hi, </h1>
-  <h2>What is "le petit déjeuner"?</h2>
+  <h2 id="question">What is "le petit déjeuner"?</h2>
+  <img src="paris.jpg" alt="ss">
   <input type="radio" id="one" name="petdej" value="breakfast">
-  <label for="breakfast">Breakfast</label><br>
+  <label for="breakfast"  id="option1">Breakfast</label><br>
   <input type="radio" id="two" name="petdej" value="lunch">
-  <label for="luch">Lunch</label><br>
+  <label for="luch" id="option2">Lunch</label><br>
   <input type="radio" id="three" name="petdej" value="dinner">
-  <label for="dinner">Dinner</label>
-  <button id="btn">Submit</button>
-</form>
+  <label for="dinner" id="option3">Dinner</label>
+  
+</br>
+  <button type="button" onclick="changeContent()">Submit</button>
+</div>
 
     <script src="./script.js"></script>
   </body>

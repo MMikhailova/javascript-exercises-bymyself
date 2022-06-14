@@ -15,14 +15,10 @@
 <p>Whether you took French in school or not you might be surprised how much French you actually know.</br>
 So take our quiz, and see if you have what it takes to pass basic French!</p>
 <h3> Bonne chance!</h3>
-<label>Your name
-  <input id='input' type="text" name="fname">
-  </label>
 </br>
-  <button type="button" onclick="checkName()">Start quiz</button>
+  <button type="button" id="start">Start quiz</button>
 </div>
 <div id="form" style="display: none">
-  <h1>Hi, </h1>
   <h2 id="question">What is "le petit déjeuner"?</h2>
   <div class="container" > <img src="paris.jpg" alt="ss">
   <input type="radio" id="one" name="petdej" value="breakfast">
@@ -36,6 +32,7 @@ So take our quiz, and see if you have what it takes to pass basic French!</p>
   <button type="button" onclick="changeContent()">Submit</button>
 </div>
 
-    <script src="./script.js"></script>
+      <script src="checkName.js" type="module"></script>
+       <script src="changeform.js" type="module"></script>
   </body>
 </html>

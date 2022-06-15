@@ -20,7 +20,7 @@ So take our quiz, and see if you have what it takes to pass basic French!</p>
 </div>
 <div id="form" style="display: none">
   <h2 id="question">What is "le petit déjeuner"?</h2>
-  <div class="container" > <img src="paris.jpg" alt="ss">
+  <div class="container" > <img id="img" src="dej.webp" alt="ss" style="display:none">
   <input type="radio" id="one" name="petdej" value="breakfast">
   <label for="breakfast"  id="option1">Breakfast</label><br>
   <input type="radio" id="two" name="petdej" value="lunch">
@@ -29,10 +29,10 @@ So take our quiz, and see if you have what it takes to pass basic French!</p>
   <label for="dinner" id="option3">Dinner</label>
   </div>
 </br>
-  <button type="button" onclick="changeContent()">Submit</button>
+  <button type="button" id="submit">Submit</button>
 </div>
 
-      <script src="checkName.js" type="module"></script>
        <script src="changeform.js" type="module"></script>
+        <script src="content.js" type="module"></script>
   </body>
 </html>

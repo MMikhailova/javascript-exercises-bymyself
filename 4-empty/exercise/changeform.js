@@ -1,10 +1,11 @@
 
 const changeForm = () => {
-    debugger;
+  debugger;
   let form = document.getElementById("form");
   document.getElementById("intro").style.display = "none";
   document.getElementById("form").style.display = "block";
 };
+
 
 document.getElementById("start").addEventListener("click", changeForm);
 /**let i = 0;

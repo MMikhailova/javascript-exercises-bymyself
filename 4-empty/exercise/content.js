@@ -1,5 +1,33 @@
-
-let changeContent = () => {
+import { counter } from "./counter.js";
+const questionList = [
+  "Finish this sequence: 'un', 'deux', 'trois'...",
+  "What is this a picture of?",
+  "How would you greet someone in French?",
+];
+const answers = [
+  "cinq",
+  "quatre",
+  "nuit",
+  "poulet",
+  "cochon",
+  "vache",
+  "au revoir",
+  "bonjour",
+  "je suis malade",
+];
+  
+const changeContent = () => {
+    const i=counter()
+    document.getElementById("question").innerText = questionList[i];
+    document.getElementById("option1").innerText = answers[i * 3];
+    document.getElementById("option2").innerText =
+      answers[i * 3 + 1];
+    document.getElementById("option3").innerText =
+      answers[i * 3 + 2];
+    
+}
+document.getElementById("submit").addEventListener("click", changeContent);
+    /**let changeContent = () => {
   const question = document.getElementById("question").innerText
   const questionList = [
     "Finish this sequence: 'un', 'deux', 'trois'...",
@@ -21,6 +49,5 @@ let changeContent = () => {
             document.getElementById("option2").innerText = answers[i + 1];
             document.getElementById("option3").innerText = answers[i + 2];
     }
-    }
-document.getElementById("submit").addEventListener("click", changeContent);
+    }**/
 

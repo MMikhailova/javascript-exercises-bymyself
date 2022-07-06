@@ -5,14 +5,15 @@ body, html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  box-sizing: border-box;
 }
-.intro, .form {
-width: 650px;
+.intro{
+text-align: center;
+width: 600px;
 height: 300px;
 margin: auto;
-text-align: center;
 background-color: whitesmoke;
-opacity: 85%;
+opacity: 90%;
 padding: 50px;
 border: 2px solid rgb(201, 196, 196);
 border-radius: 15px;
@@ -20,3 +21,38 @@ font-family: 'Caveat', cursive;
 font-size: 1.5em;
 }
 
+.form{
+width: 600px;
+height: 300px;
+margin: auto;
+background-color: whitesmoke;
+opacity: 90%;
+padding-bottom: 50px;
+border: 2px solid rgb(201, 196, 196);
+border-radius: 15px;
+font-family: 'Caveat', cursive;
+font-size: 1.5em;
+display: grid;
+grid-template-columns: 1fr 0.8fr 1.2fr;
+grid-template-rows: 0.5fr 1.5fr 0.5fr;
+justify-items: center;
+align-content: center;
+}
+#question{
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+.options{ 
+margin-top: 15px;
+grid-column: 1;
+grid-row: 2; 
+}
+
+#img{
+    grid-column: 3;
+    grid-row: 2 ;
+}
+#submit{
+grid-column: 2;
+grid-row: 3 ;
+}

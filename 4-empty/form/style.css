@@ -1,0 +1,22 @@
+body, html {
+  height: 100%;
+  display: grid;
+  background-image: url(/4-empty/exercise/paris.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.intro, .form {
+width: 650px;
+height: 300px;
+margin: auto;
+text-align: center;
+background-color: whitesmoke;
+opacity: 85%;
+padding: 50px;
+border: 2px solid rgb(201, 196, 196);
+border-radius: 15px;
+font-family: 'Caveat', cursive;
+font-size: 1.5em;
+}
+

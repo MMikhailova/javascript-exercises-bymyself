@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en,fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/4-empty/form/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+<div class="intro" style="display:block">
+<h2>Quiz "Parlez-vous français?"</h2>
+<p>Whether you took French in school or not you might be surprised how much French you actually know.</br>
+So take our quiz, and see if you have what it takes to pass basic French!</p>
+<h3> Bonne chance!</h3>
+<button type="button" id="start">Start quiz</button>
+</div>
+
+<div class="form" style="display: none">
+  <h2 id="question">What is "le petit déjeuner"?</h2>
+  <div class="container" > <img id="img" src="dej.webp" alt="ss" style="display:none">
+  <input type="radio" id="one" name="petdej" value="breakfast">
+  <label for="breakfast"  id="option1">Breakfast</label><br>
+  <input type="radio" id="two" name="petdej" value="lunch">
+  <label for="luch" id="option2">Lunch</label><br>
+  <input type="radio" id="three" name="petdej" value="dinner">
+  <label for="dinner" id="option3">Dinner</label>
+  </div>
+</br>
+  <button type="button" id="submit">Submit</button>
+</div>
+</body>
+<script src="changeform.js" type="module"></script>
+</html>

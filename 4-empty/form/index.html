@@ -21,7 +21,7 @@ So take our quiz, and see if you have what it takes to pass basic French!</p>
 <div class="form" style="display: none">
   <h2 id="question">What is "le petit déjeuner"?</h2>
   <img id="img" src="/4-empty/exercise/dej.webp" alt="ss" style="width:170px;height:170px;margin-right:15px;">
-  <div class="options">
+  <div class="options" style="display:block">
   <input type="radio" id="one" name="petdej" value="breakfast">
   <label for="breakfast" id="option1">Breakfast</label><br>
   <input type="radio" id="two" name="petdej" value="lunch">
@@ -29,8 +29,13 @@ So take our quiz, and see if you have what it takes to pass basic French!</p>
   <input type="radio" id="three" name="petdej" value="dinner">
   <label for="dinner" id="option3">Dinner</label><br>
   </div>
-  
   <button type="button" id="submit">Submit</button>
+<div class="result" style="display:none">
+<h2>Your score is</h2>
+<p></p>
+
+</div>
+
 
 </body>
    <script src="changeform.js" type="module"></script>
